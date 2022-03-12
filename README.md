@@ -37,3 +37,6 @@ My Awesomewm dotfiles used in ArchLinux.
 > <a href="https://www.flaticon.com/free-icons/silence" title="silence icons">Silence icons created by Aldo Cervantes - Flaticon</a>
 
 > <a href="https://www.flaticon.com/free-icons/audio" title="audio icons">Audio icons created by Aldo Cervantes - Flaticon</a>
+---
+### Here is the result below ! 
+
