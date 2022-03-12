@@ -1,0 +1,53 @@
+! 输出时不滚动
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! 按键按下时回到最底部
+URxvt*scrollTtyKeypress: true
+
+! Fonts
+URxvt.font: xft:SauceCodeProNerdFont:bold:size=14:antialias=true,xft:Noto Sans Mono CJK TC:bold:size=14:antialias=true
+
+! Fonts spacing
+URxvt.letterSpace: -1
+
+! scrollbar style - rxvt (default),
+! plain (compact), NeXT, or xtermn
+URxvt.scrollstyle: plain
+URxvt.scrollBar: false
+
+! cursor style
+URxvt*cursorBlink: true
+
+! color theme
+*.foreground:#ffffff
+URxvt*background: [70]#000000
+URxvt*depth: 32
+*.cursorColor:#ececec
+! black
+URxvt.color0  : #282A2E
+URxvt.color8  : #555555
+! red
+URxvt.color1  : #CC6666
+URxvt.color9  : #cb2460
+! green
+URxvt.color2  : #9cd32d
+URxvt.color10 : #B5BD68
+! yellow
+URxvt.color3  : #f1df18
+URxvt.color11  : #f4bf75
+! blue
+URxvt.color4  : #00afd7
+URxvt.color12 : #77fff4
+! magenta
+URxvt.color5  : #AA00AA
+URxvt.color13 : #FF55FF
+! cyan
+URxvt.color6  : #00AAAA
+URxvt.color14 : #55FFFF
+! white
+URxvt.color7  : #AAAAAA
+URxvt.color15 : #FFFFFF
+
