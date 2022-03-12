@@ -8,3 +8,15 @@ My Awesomewm dotfiles used in ArchLinux.
 </br>Also I put my .zshrc, .vimrc, .Xresources here. If you need, you can use those. 
 </br>However, I **DO NOT** promise that those must work in your computer. 
 </br>So, maybe use the part that you need, which is a good choice, I thought.
+
+---
+
+# Here is the screenshots !
+
+![](/screenshot/showdesktop.png)
+
+![](/screenshot/showurxvt.png)
+
+![](/screenshot/soundchange.png)
+
+![](/screenshot/neofetch.png)
