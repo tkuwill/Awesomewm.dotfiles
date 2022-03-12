@@ -15,7 +15,7 @@ My Awesomewm dotfiles used in ArchLinux.
 
 ![](/screenshot/showdesktop.png)
 
-> The line under the clock is volume bar, too. Due to I don't know how to add widgets into Awesome WM, I simply make some change of volume-adjust.lua which is in the "components" folder.
+> The line under the clock is volume bar, too. Due to I don't know how to add widgets into Awesome WM, I simply make some change of volume-adjust.lua which is in the "components" folder to make it, which is called volume-adjust2.lua.
 
 ![](/screenshot/showurxvt.png)
 
