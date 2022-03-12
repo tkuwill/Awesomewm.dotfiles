@@ -1,5 +1,10 @@
-# Awesomewm.dotfiles
-# Mainly used [WillPower3309/awesome-dotfiles](https://github.com/WillPower3309/awesome-dotfiles).
+<div align="center">
+    <h1>Awesomewm.dotfiles</h1>
+</div>
+<div align="center">
+    <h1>Mainly used [WillPower3309/awesome-dotfiles](https://github.com/WillPower3309/awesome-dotfiles).
+</h1>
+</div>
 ## Just do a little change to meet my own needs.
 ## Wallpaper is from [桜](https://www.pixiv.net/en/artworks/80518034).
 ---
