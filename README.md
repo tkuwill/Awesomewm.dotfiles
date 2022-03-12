@@ -50,3 +50,5 @@ My Awesomewm dotfiles used in ArchLinux.
 ![volume > 40](/screenshot/40.png)
 ![volume > 60](/screenshot/60.png)
 ![volume > 80](/screenshot/80.png)
+
+From left to right, first photo is **volume = 0**, second is **volume < 20**, third is **volume > 20**, fourth is **volume > 40**, fifth is **volume > 60**, final one is **volume > 80**. 
