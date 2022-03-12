@@ -40,3 +40,15 @@ My Awesomewm dotfiles used in ArchLinux.
 ---
 ### Here is the result below ! 
 
+![](/screenshot/0.png)
+> volume = 0
+![](/screenshot/0-20.png)
+> volume < 20
+![](/screenshot/20.png)
+> volume > 20 
+![](/screenshot/40.png)
+> volume > 40
+![](/screenshot/60.png) 
+> volume > 60
+![](/screenshot/80.png)
+> volume > 80
