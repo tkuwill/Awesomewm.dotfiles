@@ -30,6 +30,8 @@ My Awesomewm dotfiles used in ArchLinux.
 
 ![](/screenshot/soundchange.png)
 
+![](/screenshot/rofi.png)
+> This is my rofi' s look. I change the color of default. Also, I change the radius and its size.
 
 ![](/screenshot/neofetch.png)
 
