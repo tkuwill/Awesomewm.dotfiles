@@ -1,4 +1,8 @@
 <div align="center">
+    <img src="https://awesomewm.org/images/awesome-logo.svg">
+</div>
+
+<div align="center">
     <h1>Awesomewm.dotfiles</h1>
 </div>
 
