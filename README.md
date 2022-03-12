@@ -22,8 +22,10 @@ My Awesomewm dotfiles used in ArchLinux.
 > The line under the clock is volume bar, too. Due to I don't know how to add widgets into Awesome WM, I simply make some change of volume-adjust.lua which is in the "components" folder to make it, which is called volume-adjust2.lua. The bar will not disappear, which will let you always konw the volume all the times.
 
 ![](/screenshot/showurxvt.png)
+> Here is my terminal, urxvt. 
 
 ![](/screenshot/soundchange.png)
+
 
 ![](/screenshot/neofetch.png)
 
