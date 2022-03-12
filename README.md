@@ -24,8 +24,8 @@ My Awesomewm dotfiles used in ArchLinux.
 ![](/screenshot/neofetch.png)
 
 ### I also add more volume bar icon when the volume is over 80%, 60%, 40%, 20%, 0% and 0%. And I use the icon from [Flaticon](https://www.flaticon.com/).
-</br>If you don't like that, you can change it by yourself.
-</br>Put the icon you like in **icons/volume/pastel**, then change the **volume-adjust.lua** if you use different name of your icon. Here is the original source below.
+- If you don't like that, you can change it by yourself.
+- Put the icon you like in **icons/volume/pastel**, then change the **volume-adjust.lua** if you use different name of your icon. Here is the original source below.
 > <a href="https://www.flaticon.com/free-icons/volume-down" title="volume down icons">Volume down icons created by Freepik - Flaticon</a>
 
 > <a href="https://www.flaticon.com/free-icons/sound" title="sound icons">Sound icons created by Freepik - Flaticon</a>
