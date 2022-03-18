@@ -97,7 +97,7 @@ end
 -- ===================================================================
 -- Mouse bindings
 -- ===================================================================
-
+   -- launch rofi
 
 -- Mouse buttons on the desktop
 keys.desktopbuttons = gears.table.join(
@@ -192,19 +192,19 @@ keys.globalkeys = gears.table.join(
    ),
    awful.key({}, "XF86AudioNext",
       function()
-         awful.spawn("playerctl next", false)
+         awful.spawn("playerctl -p mpv next", false)
       end,
       {description = "next music", group = "hotkeys"}
    ),
    awful.key({}, "XF86AudioPrev",
       function()
-         awful.spawn("playerctl previous", false)
+         awful.spawn("playerctl -p mpv previous", false)
       end,
       {description = "previous music", group = "hotkeys"}
    ),
    awful.key({}, "XF86AudioPlay",
       function()
-         awful.spawn("playerctl play-pause", false)
+         awful.spawn("playerctl -p mpv play-pause", false)
       end,
       {description = "play/pause music", group = "hotkeys"}
    ),

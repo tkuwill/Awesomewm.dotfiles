@@ -9,7 +9,6 @@
 -- Standard awesome libraries
 local gears = require("gears")
 local awful = require("awful")
-
 -- ===================================================================
 -- User Configuration
 -- ===================================================================
