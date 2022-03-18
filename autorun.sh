@@ -12,4 +12,3 @@ run xfce4-power-manager
 run systemsettings
 run thunderbird
 run copyq
-run klipper
