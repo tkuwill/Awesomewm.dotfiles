@@ -119,10 +119,10 @@ volume_adjust:setup {
 --}
 
 local hide_volume_adjust = gears.timer {
-   timeout = 42949,
+   timeout = 4,
    autostart = true,
    callback = function()
-      volume_adjust.visible = false
+      volume_adjust.ontop = false
    end
 }
 -- show volume-adjust when "volume_change" signal is emitted
@@ -159,4 +159,5 @@ awesome.connect_signal("volume_change",
          hide_volume_adjust:start()
       end
    end
+
 )
