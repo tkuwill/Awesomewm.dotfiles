@@ -12,7 +12,7 @@
 ## Wallpaper is from [桜](https://www.pixiv.net/en/artworks/80518034).
 ---
 
-My Awesomewm dotfiles used in ArchLinux. 
+My Awesomewm dotfiles used in archlinux. 
 </br>Also I put my .zshrc, .vimrc, .Xresources here. If you need, you can use those. 
 </br>However, I **DO NOT** promise that those must work in your computer. 
 </br>So, maybe use the part that you need, which is a good choice, I thought.
