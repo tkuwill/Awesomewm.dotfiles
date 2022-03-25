@@ -1,3 +1,9 @@
+hi LineNr ctermfg=yellow 
+
+set wildmenu
+set t_Co=256
+set splitbelow splitright
+set ruler
 set number
 syntax on
 set hlsearch
@@ -6,7 +12,6 @@ set listchars=tab:>~,space:.
 set cindent
 set ai
 " set laststatus=2
-" set statusline+=%F
 " Some funky status bar code its seems
 " https://stackoverflow.com/questions/9065941/how-can-i-change-vim-status-line-colour
 set laststatus=2            " set the bottom status bar
@@ -24,7 +29,7 @@ au InsertLeave,InsertEnter,BufWritePost   * call ModifiedColor()
 hi statusline guibg=White ctermfg=8 guifg=DarkSlateGray ctermbg=15
 
 " Formats the statusline
-set statusline=%f                           " file name
+set statusline=%F                           " file path and name
 set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
 set statusline+=%{&ff}] "file format
 set statusline+=%y      "filetype
