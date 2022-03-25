@@ -8,10 +8,10 @@ URxvt*scrollWithBuffer: true
 URxvt*scrollTtyKeypress: true
 
 ! Fonts
-URxvt.font: xft:SauceCodeProNerdFont:bold:size=14:antialias=true,xft:Noto Sans Mono CJK TC:bold:size=14:antialias=true
+ URxvt.font: xft:SauceCodeProNerdFont:bold:size=14:antialias=true,xft:Noto Sans Mono CJK TC:bold:size=14:antialias=true,xft:Symbola:size=14:antialias=true
 
 ! Fonts spacing
-URxvt.letterSpace: -1
+ URxvt.letterSpace: 1.8
 
 ! scrollbar style - rxvt (default),
 ! plain (compact), NeXT, or xtermn
