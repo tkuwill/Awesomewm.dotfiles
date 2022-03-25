@@ -8,7 +8,7 @@
 
 # Credits [WillPower3309/awesome-dotfiles](https://github.com/WillPower3309/awesome-dotfiles).
 
-## Just do a little change to meet my own needs.
+## Just do some change to meet my own needs.
 ## Wallpaper is from [桜](https://www.pixiv.net/en/artworks/80518034).
 ---
 
