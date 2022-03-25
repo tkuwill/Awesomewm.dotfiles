@@ -19,7 +19,7 @@ My Awesomewm dotfiles used in archlinux.
 
 ---
 
-# Here is the screenshots !
+# Here is the screenshots ! !
 
 ![](/screenshot/showdesktop.png)
 
