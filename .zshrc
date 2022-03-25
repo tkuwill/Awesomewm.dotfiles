@@ -1,3 +1,14 @@
+# Load version control information
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats 'on branch %b %m%u%c'
+ 
+# Set up the prompt (with git branch name)
+
+
+
 function mem {
 	free -h | grep 'Mem' | cut -c 28-32
 }
@@ -9,8 +20,8 @@ function battery {
    upower --show-info /org/freedesktop/UPower/devices/battery_BAT0 | grep 'percentage' | cut  -c 25-28 
 }
 setopt promptsubst
-RPROMPT='%S%F{15} %* %f|RAM $(mem)/7.7Gi%S%F{38}$(battery)%%s%f%S%F{154} $(battime)%s%f'
-PROMPT='%F{38}   %f%F{231}%n@%f%F{38}%m%f  %F{14}in %~%f
+RPROMPT='%S%F{225}[%?]%f%S%F{15}%*%f|RAM$(mem)/7.7Gi%S%F{38}$(battery)%%s%f%S%F{154}$(battime)%s%f'
+PROMPT='%F{38} %f%F{231}%n@%f%F{38}%m%f  %F{14}in %~ ${vcs_info_msg_0_} %f
 %F{40} %#%f  '
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.zsh_history

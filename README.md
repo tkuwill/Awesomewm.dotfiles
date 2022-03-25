@@ -6,13 +6,13 @@
     <h1>Awesomewm.dotfiles</h1>
 </div>
 
-# Mainly used [WillPower3309/awesome-dotfiles](https://github.com/WillPower3309/awesome-dotfiles).
+# Credits [WillPower3309/awesome-dotfiles](https://github.com/WillPower3309/awesome-dotfiles).
 
 ## Just do a little change to meet my own needs.
 ## Wallpaper is from [桜](https://www.pixiv.net/en/artworks/80518034).
 ---
 
-My Awesomewm dotfiles used in ArchLinux. 
+My Awesomewm dotfiles used in archlinux. 
 </br>Also I put my .zshrc, .vimrc, .Xresources here. If you need, you can use those. 
 </br>However, I **DO NOT** promise that those must work in your computer. 
 </br>So, maybe use the part that you need, which is a good choice, I thought.
@@ -23,7 +23,7 @@ My Awesomewm dotfiles used in ArchLinux.
 
 ![](/screenshot/showdesktop.png)
 
-> The line under the clock is volume bar, too. Due to I don't know how to add widgets into Awesome WM, I simply make some change of volume-adjust.lua which is in the "components" folder to make it, which is called volume-adjust2.lua. The bar will not disappear, which will let you always know the volume all the times. And now it won't on the top. That is to say, when watching videos in full screen, it won't appear and block the content.
+> The line under the clock is volume bar, too. Due to I don't know how to add widgets into Awesome WM, I simply make some change of volume-adjust.lua which is in the "components" folder to make it, which is called volume-adjust.lua. Also, the volume-adjust.lua made by WillPower3309 is not deleted, but changed the name, now called "volume-adjust2.lua". The bar will not disappear, which will let you always know the volume all the times. And now it won't on the top. That is to say, when watching videos in full screen, it won't appear and block the content.
 
 ![](/screenshot/showurxvt.png)
 > Here is my terminal, urxvt. Use **.Xresources** to set.
