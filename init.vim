@@ -1,4 +1,4 @@
-
+    
 set t_Co=256
 set splitbelow splitright
 set ruler
@@ -7,11 +7,14 @@ set ruler
   \,a:blinkwait700-blinkoff400-blinkon250-block
   \,sm:block-blinkwait175-blinkoff150-blinkon175
 
-
+    
 set number
 syntax on
 set hlsearch
+set tabstop=4
 set softtabstop=4
+set shiftwidth=4
+set expandtab
 set listchars=tab:>~,space:.
 set cindent
 set ai
