@@ -23,7 +23,7 @@ My Awesomewm dotfiles used in archlinux.
 
 ![](/screenshot/showdesktop.png)
 
-> The line next to the clock is volume bar, too. Due to I don't know how to add widgets into Awesome WM, I simply make some change of volume-adjust.lua which is in the "components" folder to make it, which is called volume-adjust.lua. Also, the volume-adjust.lua made by WillPower3309 is not deleted, but changed the name, now called "volume-adjust2.lua". The bar will not disappear, which will let you always know the volume all the times. 
+> The line next to the clock is volume bar, too. I simply make some change of volume-adjust.lua which is in the "components" folder to make it, which is called volume-adjust.lua. Also, the volume-adjust.lua made by WillPower3309 is not deleted, but changed the name, now called "volume-adjust2.lua". The bar will not disappear, which will let you always know the volume all the times. 
 > Now top panel has changed the stytle !
 
 ![](/screenshot/showurxvt.png)
