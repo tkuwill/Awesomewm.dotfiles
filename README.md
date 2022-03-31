@@ -28,8 +28,10 @@ My Awesomewm dotfiles used in archlinux.
 
 ![](/screenshot/showurxvt.png)
 > Here is my terminal, urxvt. Use **.Xresources** to set.
+
 ![](/screenshot/cmus.png)
 > Here is my music player, cmus. You can check the file **autosave** to see my cmus's config.
+
 ![](/screenshot/rofi.png)
 > This is my rofi' s look. I change the color of default.
 
