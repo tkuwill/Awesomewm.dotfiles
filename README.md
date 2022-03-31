@@ -16,7 +16,7 @@ My Awesomewm dotfiles used in archlinux.
 </br>Also I put my .zshrc, .vimrc, .Xresources here. If you need, you can use those. 
 </br>However, I **DO NOT** promise that those must work in your computer. 
 </br>So, maybe use the part that you need, which is a good choice, I thought.
-
+</br>**The color in the config may be different from the screenshots below because I usually change colors of my UI to meet my need.**
 ---
 
 # Here is the screenshots ! !
@@ -28,16 +28,16 @@ My Awesomewm dotfiles used in archlinux.
 ![](/screenshot/showurxvt.png)
 > Here is my terminal, urxvt. Use **.Xresources** to set.
 
-![](/screenshot/soundchange.png)
 
 ![](/screenshot/rofi.png)
 > This is my rofi' s look. I change the color of default. Also, I change the radius and its size.
 
 ![](/screenshot/neofetch.png)
-
+> Neofetch.
 ## 2022/03/31 Added mpris-widget which can play or pause music by mouse. Also, it can show the artist and song name playing.
 ![](/screenshot/add-mpris-widget.png)
-
+---
+![](/screenshot/soundchange.png)
 ### I also add more volume bar icon when the volume is over 80%, 60%, 40%, 20%, 0% and 0%. And I use the icon from [Flaticon](https://www.flaticon.com/).
 - If you don't like that, you can change it by yourself.
 - Put the icon you like in **icons/volume/pastel**, then change the **volume-adjust.lua** if you use different name of your icon. Here is the original source below.
