@@ -1,0 +1,100 @@
+configuration {
+    show-icons: true;
+    icon-theme: "Papirus-Light";
+    font: "Iosevka Nerd Font 14";
+    display-drun: "";
+    drun-display-format: "{name}";
+}
+
+* {
+    background-color: transparent;
+    background: #6495ed;
+    background-alt: #E5E9F047;
+    text-color: #D8DEE9;
+    selected-text-color: #000000;
+    primary: #A3BE8C;
+    urgent: #BF616A;
+}
+
+window {
+    transparency: "real";
+    background-color: @background;
+    border:          150;
+    border-radius: 20;
+    padding:    -90 -200 -90  -200;	     
+}
+
+inputbar {
+    background-color: #4b0082;
+    text-color: @foreground;
+    border-radius: 12;
+    padding: 1.3%;
+    margin: 5% 30%;
+}
+
+prompt {
+    enabled: true;
+    margin: 0 1% 0 0;
+}
+
+entry {
+    font: "SF Pro Display 14";
+    placeholder-color: #f0f8ff;
+    placeholder: "🔍Search Applications";
+    blink: true;
+    background-color: #4b0082;
+
+}
+
+
+mainbox {
+    children: [ inputbar, listview ];
+    padding: 5%;
+}
+
+listview {
+    columns: 5;
+    layout: vertical;
+    spacing: 5;
+    margin: 5% 7%;
+}
+
+element {
+    orientation: vertical;
+    padding: 2% 0;
+    border-radius: 15;
+}
+
+element normal.urgent, element alternate.urgent {
+    background-color: @urgent;
+}
+
+element normal.active, element alternate.active {
+    background-color: @background-alt;
+    color: @selected-text-color;
+}
+
+element selected {
+    background-color: @background-alt;
+    color: @selected-text-color;
+}
+
+element selected.urgent {
+    background-color: @urgent;
+}
+
+element selected.active {
+    background-color: @background-alt;
+    color: @selected-text-color;
+}
+
+element-icon {
+    size: 10%;
+}
+
+element-text {
+    font: "SF Pro Display 10";
+    padding: 10 0 0 0;
+    text-color: inherit;
+    horizontal-align: 0.5;
+}
