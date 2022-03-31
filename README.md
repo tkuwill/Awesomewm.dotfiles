@@ -13,27 +13,26 @@
 ---
 
 My Awesomewm dotfiles used in archlinux. 
-</br>Also I put my .zshrc, .vimrc, .Xresources here. If you need, you can use those. 
-</br>However, I **DO NOT** promise that those must work in your computer. 
-</br>So, maybe use the part that you need, which is a good choice, I thought.
-</br>**The color in the config may be different from the screenshots below because I usually change colors of my UI to meet my need.**
+- Also I put my .zshrc, .vimrc, .Xresources here. If you need, you can use those. 
+- However, I **DO NOT** promise that those must work in your computer. 
+- Use the part that you need, which is a good choice, I thought.
+- **The color in the config may be different from the screenshots below because I usually change colors of my UI to meet my need.**
 ---
 
 # Here is the screenshots ! !
 
 ![](/screenshot/showdesktop.png)
 
-> The line under the clock is volume bar, too. Due to I don't know how to add widgets into Awesome WM, I simply make some change of volume-adjust.lua which is in the "components" folder to make it, which is called volume-adjust.lua. Also, the volume-adjust.lua made by WillPower3309 is not deleted, but changed the name, now called "volume-adjust2.lua". The bar will not disappear, which will let you always know the volume all the times. And now it won't on the top. That is to say, when watching videos in full screen, it won't appear and block the content.
+> The line next to the clock is volume bar, too. Due to I don't know how to add widgets into Awesome WM, I simply make some change of volume-adjust.lua which is in the "components" folder to make it, which is called volume-adjust.lua. Also, the volume-adjust.lua made by WillPower3309 is not deleted, but changed the name, now called "volume-adjust2.lua". The bar will not disappear, which will let you always know the volume all the times. 
+> Now top panel has changed the stytle !
 
 ![](/screenshot/showurxvt.png)
 > Here is my terminal, urxvt. Use **.Xresources** to set.
-
-
+![](/screenshot/cmus.png)
+> Here is my music player, cmus. You can check the file **autosave** to see my cmus's config.
 ![](/screenshot/rofi.png)
-> This is my rofi' s look. I change the color of default. Also, I change the radius and its size.
+> This is my rofi' s look. I change the color of default.
 
-![](/screenshot/neofetch.png)
-> Neofetch.
 ## 2022/03/31 Added mpris-widget which can play or pause music by mouse. Also, it can show the artist and song name playing.
 ![](/screenshot/add-mpris-widget.png)
 ---

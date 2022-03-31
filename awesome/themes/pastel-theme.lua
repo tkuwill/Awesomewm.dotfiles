@@ -42,7 +42,7 @@ theme.fg_urgent = "#ffffff"
 theme.fg_minimize = "#ffffff"
 
 -- Window Gap Distance
-theme.useless_gap = dpi(7)
+theme.useless_gap = dpi(4)
 
 -- Show Gaps if Only One Client is Visible
 theme.gap_single_client = true
@@ -72,7 +72,7 @@ theme.tasklist_fg_normal = theme.fg_normal
 
 -- Panel Sizing
 theme.left_panel_width = dpi(30)
-theme.top_panel_height = dpi(30)
+theme.top_panel_height = dpi(27)
 
 -- Notification Sizing
 theme.notification_max_width = dpi(350)

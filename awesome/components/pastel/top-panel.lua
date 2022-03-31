@@ -16,6 +16,9 @@ local wibox = require("wibox")
 local gears = require("gears")
 local dpi = beautiful.xresources.apply_dpi
 
+
+local offsety = dpi(700)
+
 -- import widgets
 local task_list = require("widgets.task-list")
 local mpris_widget = require("awesome-wm-widgets.mpris-widget")
@@ -33,7 +36,12 @@ top_panel.create = function(s)
       position = "top",
       ontop = true,
       height = beautiful.top_panel_height,
-      width = s.geometry.width,
+      width = s.geometry.width * 9.8/10,
+      opacity = 0.7,
+      type = dock,
+      shape = gears.shape.rounded_rect,
+      shape_args = {35, },
+      border_width = 5, 
    })
 
    panel:setup {

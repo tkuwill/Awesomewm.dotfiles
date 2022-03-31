@@ -20,6 +20,7 @@ local dpi = beautiful.xresources.apply_dpi
 local calendar = {}
 
 
+local GET_MPD_CMD = "playerctl metadata | grep 'title' | cut -c 30-70"
 -- ===================================================================
 -- Create Widget
 -- ===================================================================
@@ -30,20 +31,21 @@ calendar.create = function(screen)
    -- Get Time/Date format using `man strftime`
    local clock_widget = wibox.widget.textclock("<span font='" .. beautiful.title_font .."'>📆%Y/%m/%d %a⏰%T</span>", 1)
 
+   
    -- Alternative to naughty.notify - tooltip. You can compare both and choose the preferred one
-   -- awful.tooltip({
-   --   objects = {clock_widget},
-   --   mode = "outside",
-   --   align = "right",
-   --   timer_function = function()
-       --  return os.date("Today is %Y/%m/%d %A.")
-   --      return os.date("playerctl -p mpv metadata | grep 'title' | cut -c 32-100")
-   --   end,
-   --   preferred_positions = {"right", "left", "top", "bottom"},
-   --   margin_leftright = dpi(18),
-   --    margin_topbottom = dpi(18)
-
-  --  })
+    
+--   awful.tooltip({
+--      objects = {clock_widget},
+--      mode = "outside",
+--      align = "right",
+--      timer_function = function()
+--    return(string.format(GET_MPD_CMD, "'" .. "'"), 1, update_graphic, mpris_widget)
+--         return os.date("The date today is %B %d, %Y.")
+--      end,
+--      preferred_positions = {"right", "left", "top", "bottom"},
+--      margin_leftright = dpi(8),
+--      margin_topbottom = dpi(8)
+--   })
 
    local cal_shape = function(cr, width, height)
       gears.shape.partially_rounded_rect(cr, width, height, false, false, true, true, 12)

@@ -17,11 +17,10 @@ configuration {
 }
 
 window {
-    transparency: "real";
     background-color: @background;
-    border:          150;
-    border-radius: 20;
-    padding:    -90 -200 -90  -200;	     
+    border-width : 0; 
+    border-radius: 15;
+    padding:    9 20 9  20;	     
 }
 
 inputbar {

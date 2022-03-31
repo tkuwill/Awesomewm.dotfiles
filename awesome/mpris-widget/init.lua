@@ -44,7 +44,7 @@ local mpris_widget = wibox.widget{
         thickness = 2,
         start_angle = 4.71238898, -- 2pi*3/4
         forced_height = 24,
-        forced_width = 24,
+        forced_width = 50,
         rounded_edge = true,
         bg = "#ffffff11",
         paddings = 0,
@@ -61,6 +61,18 @@ local mpris_widget = wibox.widget{
     end
 }
 
+ --  awful.tooltip({
+ --     objects = {mpris_widget},
+ --     mode = "outside",
+ --     align = "right",
+ --     timer_function = function()
+ --   local current_song, artist, player_status
+ --     end,
+ --     preferred_positions = {"right", "left", "top", "bottom"},
+ --     margin_leftright = dpi(18),
+ --      margin_topbottom = dpi(18)
+
+ --   })
 local rows  = { layout = wibox.layout.fixed.vertical }
 
 local popup = awful.popup{
@@ -87,7 +99,7 @@ local function rebuild_popup()
                         color         = beautiful.bg_normal,
                         paddings      = 2,
                         shape         = gears.shape.circle,
-                        forced_width = 20,
+                        forced_width = 120,
                         forced_height = 20,
                         check_color = beautiful.fg_urgent,
                         widget        = wibox.widget.checkbox
@@ -141,7 +153,7 @@ local function worker()
         artist = words[2]
         current_song = words[3]
         if current_song ~= nil then
-            if string.len(current_song) > 18 then
+             if string.len(current_song) > 150 then
                 current_song = string.sub(current_song, 0, 9) .. ".."
             end
         end
