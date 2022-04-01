@@ -155,18 +155,22 @@ keys.globalkeys = gears.table.join(
    -- =========================================
 
    -- Brightness
-   awful.key({}, "XF86MonBrightnessUp",
-      function()
-         awful.spawn("xbacklight -inc 10", false)
-      end,
-      {description = "+10%", group = "hotkeys"}
-   ),
-   awful.key({}, "XF86MonBrightnessDown",
-      function()
-         awful.spawn("xbacklight -dec 10", false)
-      end,
-      {description = "-10%", group = "hotkeys"}
-   ),
+--   awful.key({}, "XF86MonBrightnessUp",
+--      function()
+--         awful.spawn("xbacklight -inc 10", false)
+--      end,
+--      {description = "+10%", group = "hotkeys"}
+--   ),
+--   awful.key({}, "XF86MonBrightnessDown",
+--      function()
+--         awful.spawn("xbacklight -dec 10", false)
+--      end,
+--      {description = "-10%", group = "hotkeys"}
+--   ),
+--    awful.key({ }, "XF86MonBrightnessUp", function () os.execute("backlight up") end,
+--              {description = "Increase brightness", group = "hotkeys"}),
+--    awful.key({ }, "XF86MonBrightnessDown", function () os.execute("backlight down") end,
+--              {description = "Decrease brightness", group = "hotkeys"}),
 
    -- ALSA volume control
    awful.key({}, "XF86AudioRaiseVolume",
