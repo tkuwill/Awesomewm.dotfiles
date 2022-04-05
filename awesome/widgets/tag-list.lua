@@ -67,7 +67,7 @@ local function list_update(w, buttons, label, data, objects)
          tbm = cache.tbm
          ibm = cache.ibm
       else
-         local icondpi = 10
+         local icondpi = 5
          ib = wibox.widget.imagebox()
          tb = wibox.widget.textbox()
          bgb = wibox.container.background()

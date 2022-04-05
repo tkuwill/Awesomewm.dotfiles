@@ -56,7 +56,7 @@ function folder.create(directory)
       layout = wibox.layout.align.horizontal
    }
 
-   local docu_button = clickable_container(wibox.container.margin(docu_widget, dpi(8), dpi(8), dpi(8), dpi(8)))
+   local docu_button = clickable_container(wibox.container.margin(docu_widget, dpi(4), dpi(4), dpi(4), dpi(4)))
    docu_button:buttons(
       gears.table.join(
          awful.button({}, 1, nil,

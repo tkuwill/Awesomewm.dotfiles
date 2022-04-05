@@ -46,7 +46,9 @@ left_panel.create = function(s)
       height = s.geometry.height * 7/10,
       width = beautiful.left_panel_width,
       ontop = true,
-      shape = panel_shape
+      shape = panel_shape,
+      hide_on_right_click = true,
+      
    })
 
    panel:setup {
