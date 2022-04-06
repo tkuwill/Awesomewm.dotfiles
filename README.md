@@ -14,7 +14,7 @@
 
 My Awesomewm dotfiles used in archlinux. 
 - Also I put my .zshrc, .vimrc, .Xresources and ranger's setting here. If you need, you can use those. 
-- ranger's setting can see [ArchWiki-ranger](https://wiki.archlinux.org/title/ranger#File_association) and [ranger's github wiki Image-Previews](https://github.com/ranger/ranger/wiki/Image-Previews) as reference. 
+- ranger's setting can see [ArchWiki-ranger](https://wiki.archlinux.org/title/ranger#File_association) and [ranger's github wiki Image-Previews](https://github.com/ranger/ranger/wiki/Image-Previews) and [ranger Drag-and-Drop](https://github.com/ranger/ranger/wiki/Drag-and-Drop) as reference. If you are using archlinux you might have to replace dragon with [dragon-drop](https://aur.archlinux.org/packages/dragon-drop) because they renamed it. Also in wiki, `map <C-d> shell dragon -a -x %p --and-exit` can't work for me, so I use `map <A-d> shell dragon -a -x %p --and-exit` instead. `<A-d>` means `<Alt-d>`. And in the wiki, method 2 can't work for me.
 - However, I **DO NOT** promise that those must work in your computer. 
 - Use the part that you need, which is a good choice, I thought.
 - **The color in the config may be different from the screenshots below because I usually change colors of my UI to meet my need.**
