@@ -36,7 +36,7 @@ My Awesomewm dotfiles used in archlinux.
 ![](/screenshot/rofi.png)
 > This is my rofi' s look. I change the color of default.
 
-## 2022/03/31 Added mpris-widget which can play or pause music by mouse. Also, it can show the artist and song name playing.
+## 2022/03/31 Added mpris-widget which can play or pause music by mouse. It can also go to next song or previous song by mouse scroll up or down, which depends on your setting. Also, it can show the artist and song name playing.
 ![](/screenshot/add-mpris-widget.png)
 ---
 
