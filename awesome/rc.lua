@@ -31,7 +31,8 @@ apps = {
    --launcher = "rofi -modi drun -show drun -theme " .. theme_config_dir .. "rofi.rasi",
    launcher = "rofi -normal-window -modi drun -show drun -theme " .. theme_config_dir .. "rofi.rasi",
    lock = "i3lock -p default -f -i Pictures/DesktopBackground/sakuraokita-lock.png",
-   screenshot = "scrot -e 'mv $f ~/Pictures/ 2>/dev/null'",
+   --screenshot = "scrot -e 'mv $f ~/Pictures/ 2>/dev/null'",
+   screenshot = "spectacle",
    filebrowser = ""
 }
 
