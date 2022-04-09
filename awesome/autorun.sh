@@ -9,6 +9,6 @@ function run {
 
 
 run xfce4-power-manager
-run systemsettings
+run arandr
 run thunderbird
 run copyq

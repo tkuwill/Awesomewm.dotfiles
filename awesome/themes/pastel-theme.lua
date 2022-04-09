@@ -95,7 +95,7 @@ theme.layout_tile = "~/.config/awesome/icons/layouts/tiled.png"
 theme.layout_floating = "~/.config/awesome/icons/layouts/floating.png"
 theme.layout_max = "~/.config/awesome/icons/layouts/maximized.png"
 
-theme.icon_theme = "Tela-dark"
+theme.icon_theme = "Papirus-Light"
 
 -- return theme
 return theme
