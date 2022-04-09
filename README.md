@@ -36,9 +36,16 @@ My Awesomewm dotfiles used in archlinux.
 ![](/screenshot/rofi.png)
 > This is my rofi' s look. I change the color of default.
 
-## 2022/03/31 Added mpris-widget which can play or pause music by mouse. It can also go to next song or previous song by mouse scroll up or down, which depends on your setting. Also, it can show the artist and song name playing.
+## 2022/03/31 Added mpris-widget which can play or pause music by mouse. It can also go to next song or previous song by mouse scroll up or down, which depends on your setting. Also, it can show the artist and song name playing.(From[mpris-widget](https://github.com/streetturtle/awesome-wm-widgets/tree/master/mpris-widget))
+
 ![](/screenshot/add-mpris-widget.png)
 ---
+
+## 2022/04/09 Added volume-widget. From [volume-widget](https://github.com/streetturtle/awesome-wm-widgets/tree/master/volume-widget)
+
+![](/screenshot/volume-widget.png)
+Also, I have changed the left-panel for my habit changed.
+ 
 
 ### I also add more volume bar icon when the volume is over 80%, 60%, 40%, 20%, 0% and 0%. And I use the icon from [Flaticon](https://www.flaticon.com/).
 - If you don't like that, you can change it by yourself.

@@ -25,9 +25,8 @@ pastel.initialize = function()
    -- Import components
    require("components.pastel.wallpaper")
    require("components.exit-screen")
-   require("components.volume-adjust")
    require("components.volume-adjust2")
-   require("awesome-wm-widgets.mpris-widget")
+   require("mpris-widget")
    -- Import panels
    local left_panel = require("components.pastel.left-panel")
    local top_panel = require("components.pastel.top-panel")

@@ -61,18 +61,6 @@ local mpris_widget = wibox.widget{
     end
 }
 
- --  awful.tooltip({
- --     objects = {mpris_widget},
- --     mode = "outside",
- --     align = "right",
- --     timer_function = function()
- --   local current_song, artist, player_status
- --     end,
- --     preferred_positions = {"right", "left", "top", "bottom"},
- --     margin_leftright = dpi(18),
- --      margin_topbottom = dpi(18)
-
- --   })
 local rows  = { layout = wibox.layout.fixed.vertical }
 
 local popup = awful.popup{
@@ -80,7 +68,7 @@ local popup = awful.popup{
     ontop = true,
     visible = false,
     shape = gears.shape.rounded_rect,
-    border_width = 10,
+    border_width = 1,
     border_color = beautiful.bg_focus,
     maximum_width = 400,
     offset = { y = 5 },
@@ -99,7 +87,7 @@ local function rebuild_popup()
                         color         = beautiful.bg_normal,
                         paddings      = 2,
                         shape         = gears.shape.circle,
-                        forced_width = 120,
+                        forced_width = 20,
                         forced_height = 20,
                         check_color = beautiful.fg_urgent,
                         widget        = wibox.widget.checkbox

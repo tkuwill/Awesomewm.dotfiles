@@ -21,7 +21,8 @@ local offsety = dpi(700)
 
 -- import widgets
 local task_list = require("widgets.task-list")
-local mpris_widget = require("awesome-wm-widgets.mpris-widget")
+local mpris_widget = require("mpris-widget")
+local volume_widget = require('volume-widget.volume')
 -- define module table
 local top_panel = {}
 
@@ -53,6 +54,7 @@ top_panel.create = function(s)
          layout = wibox.layout.fixed.horizontal,
          wibox.layout.margin(mpris_widget(),dpi(5), dpi(15), dpi(5), dpi(5)),
          wibox.layout.margin(wibox.widget.systray(),dpi(5), dpi(5), dpi(5), dpi(5)),
+         wibox.layout.margin(volume_widget{widget_type = 'icon_and_text'},dpi(5), dpi(5), dpi(5), dpi(5)),
          require("widgets.bluetooth"),
          require("widgets.network")(),
 --         require("widgets.battery"),

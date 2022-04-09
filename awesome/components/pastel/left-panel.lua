@@ -17,8 +17,8 @@ local awful = require("awful")
 local gears = require("gears")
 
 local tag_list = require("widgets.tag-list")
-local separator = require("widgets.horizontal-separator")
-local folder = require("widgets.folder")
+--local separator = require("widgets.horizontal-separator")
+--local folder = require("widgets.folder")
 
 local home_dir = os.getenv("HOME")
 
@@ -43,11 +43,10 @@ left_panel.create = function(s)
    panel = awful.wibar({
       screen = s,
       position = "left",
-      height = s.geometry.height * 7/10,
+      height = s.geometry.height * 3.8/10,
       width = beautiful.left_panel_width,
       ontop = true,
       shape = panel_shape,
-      hide_on_right_click = true,
       
    })
 
@@ -56,19 +55,19 @@ left_panel.create = function(s)
       layout = wibox.layout.align.vertical,
       nil,
       {
-         layout = wibox.layout.fixed.vertical,
+         layout = wibox.layout.align.vertical,
          -- add taglist widget
          tag_list.create(s),
          -- add folders widgets
-         {
-            separator,
-            folder.create(home_dir),
-            folder.create(home_dir .. "/Documents"),
-            folder.create(home_dir .. "/Downloads"),
-            separator,
-            folder.create("trash://"),
-            layout = wibox.layout.fixed.vertical,
-         }
+         --{
+         --   separator,
+         --   folder.create(home_dir),
+         --   folder.create(home_dir .. "/Documents"),
+         --   folder.create(home_dir .. "/Downloads"),
+         --   separator,
+         --   folder.create("trash://"),
+         --   layout = wibox.layout.fixed.vertical,
+         --}
       },
       nil
    }
