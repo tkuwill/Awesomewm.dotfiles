@@ -1,7 +1,7 @@
 set background=dark
 hi LineNr ctermfg=yellow 
-
-
+colorscheme PaperColor
+set cursorline
 set wildmenu
 set t_Co=256
 set splitbelow splitright
@@ -16,6 +16,7 @@ set ai
 " set laststatus=2
 " Some funky status bar code its seems
 " https://stackoverflow.com/questions/9065941/how-can-i-change-vim-status-line-colour
+" Formats the statusline------------------------------------------------------------------------
 set laststatus=2            " set the bottom status bar
 
 function! ModifiedColor()
@@ -30,7 +31,6 @@ au InsertLeave,InsertEnter,BufWritePost   * call ModifiedColor()
 " default the statusline when entering Vim
 hi statusline guibg=White ctermfg=8 guifg=DarkSlateGray ctermbg=15
 
-" Formats the statusline
 set statusline=%F                           " file path and name
 set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
 set statusline+=%{&ff}] "file format
@@ -47,7 +47,7 @@ set statusline+=\ Col:%c                    " current column
 set statusline+=\ Buf:%n                    " Buffer number
 set statusline+=\ [%b][0x%B]\               " ASCII and byte code under cursor
 
-
+" }}}
 
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 

@@ -1,4 +1,6 @@
-    
+set cursorline
+set background=dark
+colorscheme PaperColor    
 set t_Co=256
 set splitbelow splitright
 set ruler
@@ -61,4 +63,3 @@ set termencoding=utf-8
 set fileencoding=utf-8
 
 set encoding=utf-8
-
