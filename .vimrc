@@ -1,4 +1,6 @@
+set background=dark
 hi LineNr ctermfg=yellow 
+
 
 set wildmenu
 set t_Co=256
