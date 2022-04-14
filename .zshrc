@@ -17,10 +17,11 @@ function battime {
    acpi | grep 'Battery 0' | cut -c 27-49
 }
 function battery {
-   upower --show-info /org/freedesktop/UPower/devices/battery_BAT0 | grep 'percentage' | cut  -c 25-28 
+   upower --show-info /org/freedesktop/UPower/devices/battery_BAT0 | grep 'percentage' | cut  -c 25-27
 }
 setopt promptsubst
-RPROMPT='%S%F{225}[%?]%f%S%F{15}%*%f|RAM$(mem)/7.7Gi%S%F{38}$(battery)%%s%f%S%F{154}$(battime)%s%f'
+
+RPROMPT='%S%F{225}[%?]%f%S%F{15}%*%f|RAM$(mem)/7.7Gi%S%F{38}$(battery)%%%S%f%F{154}$(battime)%S'
 PROMPT='%F{38} %f%F{231}%n@%f%F{38}%m%f  %F{14}in %~ ${vcs_info_msg_0_} %f
 %F{40} %#%f  '
 # Lines configured by zsh-newuser-install
