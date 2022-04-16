@@ -23,6 +23,7 @@ local offsety = dpi(700)
 local task_list = require("widgets.task-list")
 local mpris_widget = require("mpris-widget")
 local volume_widget = require('volume-widget.volume')
+local logout_menu_widget = require("logout-menu-widget.logout-menu")
 -- define module table
 local top_panel = {}
 
@@ -57,8 +58,9 @@ top_panel.create = function(s)
          wibox.layout.margin(volume_widget{widget_type = 'icon_and_text'},dpi(5), dpi(5), dpi(5), dpi(5)),
          require("widgets.bluetooth"),
          require("widgets.network")(),
---         require("widgets.battery"),
-         wibox.layout.margin(require("widgets.layout-box"), dpi(5), dpi(5), dpi(5), dpi(5))
+      --   require("widgets.battery"),
+         wibox.layout.margin(require("widgets.layout-box"), dpi(5), dpi(5), dpi(5), dpi(5)),
+         wibox.layout.margin(logout_menu_widget(),dpi(5), dpi(5), dpi(5), dpi(5)),
 
       }
    }

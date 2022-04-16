@@ -8,12 +8,14 @@
 
 # Credits [WillPower3309/awesome-dotfiles](https://github.com/WillPower3309/awesome-dotfiles).
 
-## Just do some change to meet my own needs.
-## Wallpaper is from [桜](https://www.pixiv.net/en/artworks/80518034).
+> Just do some change to meet my own needs.
+
+> Wallpaper is from [桜](https://www.pixiv.net/en/artworks/80518034).
+
 ---
 
-My Awesomewm dotfiles used in archlinux. 
-- Also I put my .zshrc, .vimrc, .Xresources and ranger's setting here. If you need, you can use those. 
+## My Awesomewm dotfiles used in archlinux. 
+- Also I put my `.zshrc`, `.vimrc`, `init.vim`, `.Xresources` and `ranger`'s setting here. If you need, you can use those. 
 - ranger's setting can see [ArchWiki-ranger](https://wiki.archlinux.org/title/ranger#File_association) and [ranger's github wiki Image-Previews](https://github.com/ranger/ranger/wiki/Image-Previews) and [ranger Drag-and-Drop](https://github.com/ranger/ranger/wiki/Drag-and-Drop) as reference. If you are using archlinux you might have to replace dragon with [dragon-drop](https://aur.archlinux.org/packages/dragon-drop) because they renamed it. Also in wiki, `map <C-d> shell dragon -a -x %p --and-exit` can't work for me, so I use `map <A-d> shell dragon -a -x %p --and-exit` instead. `<A-d>` means `<Alt-d>`. And in the wiki, method 2 can't work for me.
 - However, I **DO NOT** promise that those must work in your computer. 
 - Use the part that you need, which is a good choice, I thought.
@@ -24,14 +26,12 @@ My Awesomewm dotfiles used in archlinux.
 
 ![](/screenshot/showdesktop.png)
 
-> The line next to the clock is volume bar, too. I simply make some change of volume-adjust.lua which is in the "components" folder to make it, which is called volume-adjust.lua. Also, the volume-adjust.lua made by WillPower3309 is not deleted, but changed the name, now called "volume-adjust2.lua". The bar will not disappear, which will let you always know the volume all the times. 
-> Now top panel has changed the stytle !
 
 ![](/screenshot/showurxvt.png)
 > Here is my terminal, urxvt. Use **.Xresources** to set.
 
 ![](/screenshot/cmus.png)
-> Here is my music player, cmus. You can check the file **autosave** to see my cmus's config.
+> Here is my music player, cmus. You can check the file `autosave` to see my cmus's config.
 
 ![](/screenshot/rofi.png)
 > This is my rofi' s look. I change the color of default.
@@ -46,6 +46,18 @@ My Awesomewm dotfiles used in archlinux.
 ![](/screenshot/volume-widget.png)
 Also, I have changed the left-panel for my habit changed.
  
+## 2022/04/16 Added Logout Menu Widget. From [Logout Menu Widget](https://github.com/streetturtle/awesome-wm-widgets/tree/master/logout-menu-widget).
+
+![](/screenshot/logout-menu-widget.png)
+Also, I now use [papercolor-theme](https://github.com/NLKNguyen/papercolor-theme) for vim and neovim. I also use [ohmyzsh-battery.plugin.zsh](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/battery/battery.plugin.zsh) to fix my terminal zsh prompt.
+
+![](/screenshot/zsh-prompt.png)
+I change the default icon when charging. 
+
+![](/screenshot/man.png)
+I have also changed the pager for `man`. Now I use `vim` as pager. You can check my `.zshrc` for the setting. More details or tutorial from [Using Vim as $MANPAGER](https://zameermanji.com/blog/2012/12/30/using-vim-as-manpager/), [A faster Vim, for a better manpager](https://kgrz.io/faster-vim-better-manpager.html), [5 cool terminal pagers in Fedora](https://fedoramagazine.org/5-cool-terminal-pagers-in-fedora/). If you need, take a look.
+
+---
 
 ### I also add more volume bar icon when the volume is over 80%, 60%, 40%, 20%, 0% and 0%. And I use the icon from [Flaticon](https://www.flaticon.com/).
 - If you don't like that, you can change it by yourself.
