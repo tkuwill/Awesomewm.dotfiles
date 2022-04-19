@@ -17,6 +17,7 @@ set softtabstop=4
 set listchars=tab:>~,space:.
 set cindent
 set ai
+set shortmess-=S
 
 " }}}
 
@@ -67,3 +68,6 @@ set fileencoding=utf-8
 set encoding=utf-8
 
 " }}}
+
+" keymapping
+nnoremap <C-A> :noh<cr>
