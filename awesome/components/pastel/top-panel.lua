@@ -53,13 +53,13 @@ top_panel.create = function(s)
       require("widgets.calendar").create(s),
       {
          layout = wibox.layout.fixed.horizontal,
-         wibox.layout.margin(mpris_widget(),dpi(5), dpi(15), dpi(5), dpi(5)),
-         wibox.layout.margin(wibox.widget.systray(),dpi(5), dpi(5), dpi(5), dpi(5)),
+         wibox.layout.margin(mpris_widget(),dpi(5), dpi(5), dpi(5), dpi(5)),
+         wibox.layout.margin(wibox.widget.systray(),dpi(5), dpi(3), dpi(5), dpi(5)),
          wibox.layout.margin(volume_widget{widget_type = 'icon_and_text'},dpi(5), dpi(5), dpi(5), dpi(5)),
          require("widgets.bluetooth"),
          require("widgets.network")(),
       --   require("widgets.battery"),
-         wibox.layout.margin(require("widgets.layout-box"), dpi(5), dpi(5), dpi(5), dpi(5)),
+         wibox.layout.margin(require("widgets.layout-box"), dpi(5), dpi(4), dpi(5), dpi(5)),
          wibox.layout.margin(logout_menu_widget(),dpi(5), dpi(5), dpi(5), dpi(5)),
 
       }
