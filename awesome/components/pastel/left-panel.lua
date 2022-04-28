@@ -43,15 +43,19 @@ left_panel.create = function(s)
    panel = awful.wibar({
       screen = s,
       position = "left",
-      height = s.geometry.height * 3.8/10,
-      width = beautiful.left_panel_width,
+      height = s.geometry.height * 3.2/10,
+      --width = beautiful.left_panel_width,
+      width = 20,
       ontop = true,
       shape = panel_shape,
+--      shape = gears.shape.powerline,
+    --  widget = wibox.widget.separator,
       
    })
 
    panel:setup {
       expand = "none",
+     -- expand = "true",
       layout = wibox.layout.align.vertical,
       nil,
       {

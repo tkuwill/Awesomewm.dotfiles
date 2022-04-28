@@ -17,54 +17,52 @@ local gears = require("gears")
 local dpi = beautiful.xresources.apply_dpi
 
 
-local offsety = dpi(700)
+local offsety = dpi(1)
 
 -- import widgets
-local tag_list2 = require("widgets.tag-list2")
---local task_list = require("widgets.task-list")
-local mpris_widget = require("mpris-widget")
-local volume_widget = require('volume-widget.volume')
-local logout_menu_widget = require("logout-menu-widget.logout-menu")
+local task_list = require("widgets.task-list")
+--local mpris_widget = require("mpris-widget")
+--local volume_widget = require('volume-widget.volume')
+--local logout_menu_widget = require("logout-menu-widget.logout-menu")
 -- define module table
-local top_panel = {}
+local bottom_panel = {}
 
 -- ===================================================================
 -- Bar Creation
 -- ===================================================================
 
 
-top_panel.create = function(s)
+bottom_panel.create = function(s)
    local panel = awful.wibar({
       screen = s,
-      position = "top",
+      position = "bottom",
       ontop = true,
       height = beautiful.top_panel_height,
-      width = s.geometry.width * 9.8/10,
+      width = s.geometry.width * 7.5/10,
       opacity = 0.7,
       type = dock,
       shape = gears.shape.rounded_rect,
       shape_args = {35, },
-      border_width = 5, 
+      border_width = 0.5, 
    })
 
    panel:setup {
       expand = "none",
-      layout = wibox.layout.align.horizontal,
-      tag_list2.create(s),
---      task_list.create(s),
-      require("widgets.calendar").create(s),
-      {
-         layout = wibox.layout.fixed.horizontal,
-         wibox.layout.margin(mpris_widget(),dpi(5), dpi(5), dpi(5), dpi(5)),
-         wibox.layout.margin(wibox.widget.systray(),dpi(5), dpi(3), dpi(5), dpi(5)),
-         wibox.layout.margin(volume_widget{widget_type = 'icon_and_text'},dpi(5), dpi(5), dpi(5), dpi(5)),
-         require("widgets.bluetooth"),
-         require("widgets.network")(),
+      layout = wibox.layout.flex.horizontal,
+      task_list.create(s),
+  --    require("widgets.calendar").create(s),
+   --   {
+  --       layout = wibox.layout.fixed.horizontal,
+--         wibox.layout.margin(mpris_widget(),dpi(5), dpi(5), dpi(5), dpi(5)),
+--         wibox.layout.margin(wibox.widget.systray(),dpi(5), dpi(3), dpi(5), dpi(5)),
+--         wibox.layout.margin(volume_widget{widget_type = 'icon_and_text'},dpi(5), dpi(5), dpi(5), dpi(5)),
+--         require("widgets.bluetooth"),
+--         require("widgets.network")(),
       --   require("widgets.battery"),
-         wibox.layout.margin(require("widgets.layout-box"), dpi(5), dpi(4), dpi(5), dpi(5)),
-         wibox.layout.margin(logout_menu_widget(),dpi(5), dpi(5), dpi(5), dpi(5)),
+--         wibox.layout.margin(require("widgets.layout-box"), dpi(5), dpi(4), dpi(5), dpi(5)),
+--         wibox.layout.margin(logout_menu_widget(),dpi(5), dpi(5), dpi(5), dpi(5)),
 
-      }
+  --    }
    }
 
 
@@ -86,4 +84,4 @@ top_panel.create = function(s)
 
 end
 
-return top_panel
+return bottom_panel

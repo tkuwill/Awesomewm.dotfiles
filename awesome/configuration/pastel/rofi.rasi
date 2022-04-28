@@ -20,7 +20,7 @@ window {
     background-color: @background;
     border-width : 0; 
     border-radius: 15;
-    padding:    9 20 9  20;	     
+    padding:    9 2 9 2;	     
 }
 
 inputbar {
@@ -52,10 +52,10 @@ mainbox {
 }
 
 listview {
-    columns: 5;
+    columns: 7;
     layout: vertical;
     spacing: 5;
-    margin: 5% 7%;
+    margin: 2% 2%;
 }
 
 element {

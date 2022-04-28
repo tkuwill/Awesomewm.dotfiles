@@ -18,7 +18,7 @@ local clickable_container = require('widgets.clickable-container')
 local modkey = require('keys').modkey
 
 -- define module table
-local tag_list = {}
+local tag_list2 = {}
 
 
 -- ===================================================================
@@ -73,7 +73,7 @@ local function list_update(w, buttons, label, data, objects)
          bgb = wibox.container.background()
          tbm = wibox.container.margin(tb, dpi(1), dpi(1))
          ibm = wibox.container.margin(ib, dpi(icondpi), dpi(icondpi), dpi(icondpi), dpi(icondpi))
-         l = wibox.layout.fixed.horizontal()
+         l = wibox.layout.fixed.vertical()
          bg_clickable = clickable_container()
 
          -- All of this is added in a fixed widget
@@ -121,7 +121,7 @@ local function list_update(w, buttons, label, data, objects)
 end
 
 -- create the tag list widget
-tag_list.create = function(s)
+tag_list2.create = function(s)
    return awful.widget.taglist(
       s,
       awful.widget.taglist.filter.all,
@@ -162,8 +162,8 @@ tag_list.create = function(s)
       ),
       {},
       list_update,
-      wibox.layout.fixed.vertical()
+      wibox.layout.fixed.horizontal()
    )
 end
 
-return tag_list
+return tag_list2

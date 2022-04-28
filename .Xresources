@@ -13,6 +13,7 @@ URxvt*scrollTtyKeypress: true
 ! Fonts spacing
  URxvt.letterSpace: 1.8
 
+
 ! scrollbar style - rxvt (default),
 ! plain (compact), NeXT, or xtermn
 URxvt.scrollstyle: plain
@@ -37,7 +38,7 @@ URxvt.color2  : #9cd32d
 URxvt.color10 : #B5BD68
 ! yellow
 URxvt.color3  : #f1df18
-URxvt.color11  : #f4bf75
+URxvt.color11 : #f4bf75
 ! blue
 URxvt.color4  : #00afd7
 URxvt.color12 : #77fff4

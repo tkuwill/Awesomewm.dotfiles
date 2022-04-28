@@ -8,7 +8,7 @@
 
 # Credits [WillPower3309/awesome-dotfiles](https://github.com/WillPower3309/awesome-dotfiles).
 
-> Just do some change to meet my own needs.
+> Do much customization to meet my own needs.
 
 > Wallpaper is from [桜](https://www.pixiv.net/en/artworks/80518034).
 
@@ -38,30 +38,29 @@
 
 ## 2022/03/31 Added mpris-widget which can play or pause music by mouse. It can also go to next song or previous song by mouse scroll up or down, which depends on your setting. Also, it can show the artist and song name playing. (From [mpris-widget](https://github.com/streetturtle/awesome-wm-widgets/tree/master/mpris-widget))
 
-![](/screenshot/add-mpris-widget.png)
----
-
 ## 2022/04/09 Added volume-widget. From [volume-widget](https://github.com/streetturtle/awesome-wm-widgets/tree/master/volume-widget).
 
-![](/screenshot/volume-widget.png)
-Also, I have changed the left-panel for my habit changed.
- 
 ## 2022/04/16 Added Logout Menu Widget. From [Logout Menu Widget](https://github.com/streetturtle/awesome-wm-widgets/tree/master/logout-menu-widget).
 
 ![](/screenshot/logout-menu-widget.png)
+
 Also, I now use [papercolor-theme](https://github.com/NLKNguyen/papercolor-theme) for vim and neovim. I also use [ohmyzsh-battery.plugin.zsh](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/battery/battery.plugin.zsh) to fix my terminal zsh prompt.
 
-![](/screenshot/zsh-prompt.png)
-I change the default icon when charging. 
 
 ![](/screenshot/man.png)
 I have also changed the pager for `man`. Now I use `vim` as pager. You can check my `.zshrc` for the setting. More details or tutorial from [Using Vim as $MANPAGER](https://zameermanji.com/blog/2012/12/30/using-vim-as-manpager/), [A faster Vim, for a better manpager](https://kgrz.io/faster-vim-better-manpager.html), [5 cool terminal pagers in Fedora](https://fedoramagazine.org/5-cool-terminal-pagers-in-fedora/). If you need, take a look.
+
+## 2022/04/28 Removed left-panel. Added bottom-panel and changed top-panel.
+
+![](/screenshot/newlayout.png)
+
+
 
 ---
 
 ### I also add more volume bar icon when the volume is over 80%, 60%, 40%, 20%, 0% and 0%. And I use the icon from [Flaticon](https://www.flaticon.com/).
 - If you don't like that, you can change it by yourself.
-- Put the icon you like in **icons/volume/pastel**, then change the **volume-adjust.lua** if you use different name of your icon. Here is the original source below.
+- Put the icon you like in **icons/volume/pastel**, then change the **volume-adjust2.lua** if you use different name of your icon. Here is the original source below.
 > <a href="https://www.flaticon.com/free-icons/volume-down" title="volume down icons">Volume down icons created by Freepik - Flaticon</a>
 
 > <a href="https://www.flaticon.com/free-icons/sound" title="sound icons">Sound icons created by Freepik - Flaticon</a>
