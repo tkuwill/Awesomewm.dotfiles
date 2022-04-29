@@ -150,6 +150,7 @@ keys.globalkeys = gears.table.join(
       {description = "application launcher", group = "launcher"}
    ),
 
+
    -- =========================================
    -- FUNCTION KEYS
    -- =========================================

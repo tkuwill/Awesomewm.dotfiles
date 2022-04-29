@@ -54,7 +54,9 @@ I have also changed the pager for `man`. Now I use `vim` as pager. You can check
 
 ![](/screenshot/newlayout.png)
 
+## 2022/04/30 Removed bottom-panel, merged tasklist to top-panel, and redesigned top-panel.
 
+![](/screenshot/newlayout2.png)
 
 ---
 

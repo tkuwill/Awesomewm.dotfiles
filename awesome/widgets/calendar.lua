@@ -20,7 +20,6 @@ local dpi = beautiful.xresources.apply_dpi
 local calendar = {}
 
 
-local GET_MPD_CMD = "playerctl metadata | grep 'title' | cut -c 30-70"
 -- ===================================================================
 -- Create Widget
 -- ===================================================================
@@ -29,7 +28,7 @@ local GET_MPD_CMD = "playerctl metadata | grep 'title' | cut -c 30-70"
 calendar.create = function(screen)
    -- Clock / Calendar 24h format
    -- Get Time/Date format using `man strftime`
-   local clock_widget = wibox.widget.textclock("<span font='" .. beautiful.title_font .."'>📆%Y/%m/%d %a⏰%T</span>", 1)
+   local clock_widget = wibox.widget.textclock("<span font='" .. beautiful.title_font .."'>  📆%Y/%m/%d %a⏰%T </span>", 1)
 
    
    -- Alternative to naughty.notify - tooltip. You can compare both and choose the preferred one

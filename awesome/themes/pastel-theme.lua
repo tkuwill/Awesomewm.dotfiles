@@ -25,9 +25,12 @@ local theme = {}
 theme.name = "pastel"
 
 -- Font
-theme.font = "SF Pro Text 9"
-theme.title_font = "SF Pro Display Medium 10"
+--theme.font = "SF Pro Text 9"
+--theme.title_font = "SF Pro Display Medium 10"
 
+-- Font
+theme.font = "SF Pro Text 9"
+theme.title_font = "SauceCodePro Nerd Font Medium 10"
 -- Background
 theme.bg_normal = "#1f2430"
 theme.bg_dark = "#000000"
@@ -55,7 +58,7 @@ theme.border_marked = theme.fg_urgent
 
 -- Taglist
 theme.taglist_bg_empty = theme.bg_normal
-theme.taglist_bg_occupied = "#e6e6fa"
+theme.taglist_bg_occupied = "#00007f"
 theme.taglist_bg_urgent = "#e91e6399"
 theme.taglist_bg_focus = "#f0e68c"
 

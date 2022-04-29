@@ -19,11 +19,18 @@ local dpi = beautiful.xresources.apply_dpi
 
 local offsety = dpi(1)
 
+
+
 -- import widgets
 local task_list = require("widgets.task-list")
 --local mpris_widget = require("mpris-widget")
 --local volume_widget = require('volume-widget.volume')
 --local logout_menu_widget = require("logout-menu-widget.logout-menu")
+
+-- Define mod keys
+local modkey = "Mod4"
+local altkey = "Mod1"
+
 -- define module table
 local bottom_panel = {}
 
@@ -33,14 +40,14 @@ local bottom_panel = {}
 
 
 bottom_panel.create = function(s)
-   local panel = awful.wibar({
+   local panel = awful.wibox({
       screen = s,
       position = "bottom",
-      ontop = true,
+      ontop = false,
       height = beautiful.top_panel_height,
-      width = s.geometry.width * 7.5/10,
+      width = s.geometry.width * 3.6/10,
       opacity = 0.7,
-      type = dock,
+      type = desktop,
       shape = gears.shape.rounded_rect,
       shape_args = {35, },
       border_width = 0.5, 
@@ -53,6 +60,7 @@ bottom_panel.create = function(s)
   --    require("widgets.calendar").create(s),
    --   {
   --       layout = wibox.layout.fixed.horizontal,
+
 --         wibox.layout.margin(mpris_widget(),dpi(5), dpi(5), dpi(5), dpi(5)),
 --         wibox.layout.margin(wibox.widget.systray(),dpi(5), dpi(3), dpi(5), dpi(5)),
 --         wibox.layout.margin(volume_widget{widget_type = 'icon_and_text'},dpi(5), dpi(5), dpi(5), dpi(5)),
@@ -69,8 +77,15 @@ bottom_panel.create = function(s)
    -- ===================================================================
    -- Functionality
    -- ===================================================================
-
-
+  -- Show/Hide Wibox
+  awful.key({ modkey }, "b",
+          function ()
+              myscreen = awful.screen.focused()
+              myscreen.mywibox.visible = not myscreen.mywibox.visible
+          end,
+          {description = "toggle statusbar"}
+)
+             
    -- hide panel when client is fullscreen
    local function change_panel_visibility(client)
       if client.screen == s then

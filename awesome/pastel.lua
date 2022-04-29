@@ -30,7 +30,7 @@ pastel.initialize = function()
    -- Import panels
 --   local left_panel = require("components.pastel.left-panel")
    local top_panel = require("components.pastel.top-panel")
-   local bottom_panel = require("components.pastel.bottom-panel")
+--   local bottom_panel = require("components.pastel.bottom-panel")
    
    -- Set up each screen (add tags & panels)
    awful.screen.connect_for_each_screen(function(s)
@@ -52,7 +52,7 @@ pastel.initialize = function()
 
       -- Add the top panel to every screen
       top_panel.create(s)
-      bottom_panel.create(s)
+ --     bottom_panel.create(s)
    end)
 end
 

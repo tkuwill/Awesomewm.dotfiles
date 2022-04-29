@@ -104,7 +104,7 @@ local function list_update(w, buttons, label, data, objects)
             objects = {tb},
             mode = 'outside',
             align = 'bottom',
-            delay_show = 1,
+            delay_show = 0.1,
          })
 
          data[o] = {
@@ -127,14 +127,14 @@ local function list_update(w, buttons, label, data, objects)
           -- truncate when title is too long
          local text_only = text:match('>(.-)<')
          if (text_only:len() > 24) then
-            text = text:gsub('>(.-)<', '>' .. text_only:sub(1, 21) .. '...<')
+            text = text:gsub('>(.-)<', '>' .. text_only:sub(1, 10) .. '...<')
             tt:set_text(text_only)
             tt:add_to_object(tb)
          else
             tt:remove_from_object(tb)
          end
          if not tb:set_markup_silently(text) then
-            tb:set_markup('<i>&lt;Invalid text&gt;</i>')
+            tb:set_markup('<i>&lt;Invalid text&gt;</i>')           
          end
       end
       bgb:set_bg(bg)

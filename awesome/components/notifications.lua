@@ -30,7 +30,7 @@ naughty.config.defaults.timeout = 3
 naughty.config.defaults.title = "System Notification"
 naughty.config.defaults.margin = dpi(16)
 naughty.config.defaults.border_width = 0
-naughty.config.defaults.position = "top_right"
+naughty.config.defaults.position = "top_left"
 naughty.config.defaults.shape = function(cr, w, h)
    gears.shape.rounded_rect(cr, w, h, dpi(6))
 end
