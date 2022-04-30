@@ -54,9 +54,11 @@ I have also changed the pager for `man`. Now I use `vim` as pager. You can check
 
 ![](/screenshot/newlayout.png)
 
-## 2022/04/30 Removed bottom-panel, merged tasklist to top-panel, and redesigned top-panel.
+## 2022/04/30 Removed bottom-panel, merged tasklist to top-panel, redesigned top-panel, and change theme font.
 
 ![](/screenshot/newlayout2.png)
+
+I use [SauceCodePro Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/SourceCodePro) to avoid widgets keeping moving left and right. Due to SauceCodePro Nerd Font is Monospaced font. 
 
 ---
 
