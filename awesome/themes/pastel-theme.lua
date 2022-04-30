@@ -29,7 +29,7 @@ theme.name = "pastel"
 --theme.title_font = "SF Pro Display Medium 10"
 
 -- Font
-theme.font = "SF Pro Text 9"
+theme.font = "SauceCodePro Nerd Font Medium 10"
 theme.title_font = "SauceCodePro Nerd Font Medium 10"
 -- Background
 theme.bg_normal = "#1f2430"
