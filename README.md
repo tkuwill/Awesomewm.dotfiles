@@ -64,7 +64,7 @@ I use [SauceCodePro Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/mast
 
 ![](/screenshot/battery.png)
 
-I changed the default position and font of widget.
+I changed the default position of popup and font of widget.
 
 ---
 
