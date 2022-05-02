@@ -60,6 +60,12 @@ I have also changed the pager for `man`. Now I use `vim` as pager. You can check
 
 I use [SauceCodePro Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/SourceCodePro) to avoid widgets keeping moving left and right. Due to SauceCodePro Nerd Font is Monospaced font. 
 
+## 2022/05/03 Added [battery-widget](https://github.com/streetturtle/awesome-wm-widgets/tree/master/battery-widget) for the notification when battery is dying.
+
+![](/screenshot/battery.png)
+
+I changed the default position and font of widget.
+
 ---
 
 ### I also add more volume bar icon when the volume is over 80%, 60%, 40%, 20%, 0% and 0%. And I use the icon from [Flaticon](https://www.flaticon.com/).
