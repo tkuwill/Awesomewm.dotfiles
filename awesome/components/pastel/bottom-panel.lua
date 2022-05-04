@@ -15,6 +15,7 @@ local beautiful = require("beautiful")
 local wibox = require("wibox")
 local gears = require("gears")
 local dpi = beautiful.xresources.apply_dpi
+local naughty = require("naughty")
 
 
 local offsety = dpi(1)
@@ -22,7 +23,8 @@ local offsety = dpi(1)
 
 
 -- import widgets
-local task_list = require("widgets.task-list")
+local notification_center = require("widgets.notification-center")
+--local task_list = require("widgets.task-list")
 --local mpris_widget = require("mpris-widget")
 --local volume_widget = require('volume-widget.volume')
 --local logout_menu_widget = require("logout-menu-widget.logout-menu")
@@ -42,21 +44,22 @@ local bottom_panel = {}
 bottom_panel.create = function(s)
    local panel = awful.wibox({
       screen = s,
-      position = "bottom",
-      ontop = false,
-      height = beautiful.top_panel_height,
-      width = s.geometry.width * 3.6/10,
-      opacity = 0.7,
-      type = desktop,
-      shape = gears.shape.rounded_rect,
-      shape_args = {35, },
-      border_width = 0.5, 
-   })
+     position = "bottom",
+     ontop = false,
+     height = beautiful.top_panel_height,
+     width = s.geometry.width * 3.6/10,
+     opacity = 0.7,
+     type = desktop,
+     shape = gears.shape.rounded_rect,
+     shape_args = {35, },
+    --     border_width = 0.5, 
+  })
 
    panel:setup {
       expand = "none",
       layout = wibox.layout.flex.horizontal,
-      task_list.create(s),
+     notification_center.create(s), 
+--      task_list.create(s),
   --    require("widgets.calendar").create(s),
    --   {
   --       layout = wibox.layout.fixed.horizontal,
@@ -77,26 +80,26 @@ bottom_panel.create = function(s)
    -- ===================================================================
    -- Functionality
    -- ===================================================================
-  -- Show/Hide Wibox
-  awful.key({ modkey }, "b",
-          function ()
-              myscreen = awful.screen.focused()
-              myscreen.mywibox.visible = not myscreen.mywibox.visible
-          end,
-          {description = "toggle statusbar"}
-)
              
    -- hide panel when client is fullscreen
-   local function change_panel_visibility(client)
-      if client.screen == s then
-         panel.ontop = not client.fullscreen
-      end
-   end
+--   local function change_panel_visibility(client)
+--      if client.screen == s then
+--         panel.ontop = not client.fullscreen
+--      end
+--   end
 
    -- connect panel visibility function to relevant signals
-   client.connect_signal("property::fullscreen", change_panel_visibility)
-   client.connect_signal("focus", change_panel_visibility)
+--   client.connect_signal("property::fullscreen", change_panel_visibility)
+--   client.connect_signal("focus", change_panel_visibility)
 
 end
+
+
+
+
+
+
+
+
 
 return bottom_panel

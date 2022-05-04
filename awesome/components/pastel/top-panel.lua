@@ -25,6 +25,7 @@ local task_list = require("widgets.task-list")
 local mpris_widget = require("mpris-widget")
 local volume_widget = require('volume-widget.volume')
 local logout_menu_widget = require("logout-menu-widget.logout-menu")
+local battery_widget = require("battery-widget.battery")
 -- define module table
 local top_panel = {}
 
@@ -51,94 +52,109 @@ top_panel.create = function(s)
       expand = "none",
       spacing = 1,
     spacing_widget = {
-        color  = '#aaffff',
+      color  = '#aaffff',
       shape = gears.shape.rounded_rect,
       shape_args = {35, },
-        widget = wibox.widget.separator,
+      widget = wibox.widget.separator,
     },
       layout = wibox.layout.fixed.horizontal,
-         wibox.layout.margin(logout_menu_widget(),dpi(5), dpi(5), dpi(5), dpi(5)),
+        wibox.layout.margin(logout_menu_widget(),dpi(5), dpi(5), dpi(5), dpi(5)),
       spacing = 1,
     spacing_widget = {
-        color  = '#aaffff',
+      color  = '#aaffff',
       shape = gears.shape.rounded_rect,
       shape_args = {35, },
-        widget = wibox.widget.separator,
+      widget = wibox.widget.separator,
     },
          wibox.layout.margin(require("widgets.layout-box"), dpi(5), dpi(4), dpi(5), dpi(5)),
       spacing = 1,
     spacing_widget = {
-        color  = '#aaffff',
+      color  = '#aaffff',
       shape = gears.shape.rounded_rect,
       shape_args = {35, },
-        widget = wibox.widget.separator,
+      widget = wibox.widget.separator,
     },
          require("widgets.network")(),
       spacing = 1,
     spacing_widget = {
-        color  = '#aaffff',
+      color  = '#aaffff',
       shape = gears.shape.rounded_rect,
       shape_args = {35, },
-        widget = wibox.widget.separator,
+      widget = wibox.widget.separator,
     },
          require("widgets.bluetooth"),
       spacing = 1,
     spacing_widget = {
-        color  = '#aaffff',
+      color  = '#aaffff',
       shape = gears.shape.rounded_rect,
       shape_args = {35, },
-        widget = wibox.widget.separator,
+      widget = wibox.widget.separator,
     },
          wibox.layout.margin(volume_widget{widget_type = 'icon_and_text'},dpi(5), dpi(5), dpi(5), dpi(5)),
       spacing = 1,
     spacing_widget = {
-        color  = '#aaffff',
+      color  = '#aaffff',
       shape = gears.shape.rounded_rect,
       shape_args = {35, },
-        widget = wibox.widget.separator,
+      widget = wibox.widget.separator,
     },
+         wibox.layout.margin(battery_widget(),dpi(5), dpi(5), dpi(5), dpi(5)),
+      spacing = 1,
+    spacing_widget = {
+      color  = '#aaffff',
+      shape = gears.shape.rounded_rect,
+      shape_args = {35, },
+      widget = wibox.widget.separator,
+    },
+    
          wibox.layout.margin(wibox.widget.systray(),dpi(5), dpi(3), dpi(5), dpi(5)),
       spacing = 1,
     spacing_widget = {
-        color  = '#aaffff',
+      color  = '#aaffff',
       shape = gears.shape.rounded_rect,
       shape_args = {35, },
-        widget = wibox.widget.separator,
+      widget = wibox.widget.separator,
     },
            { 
  --        fill_space = true, 
          layout = wibox.layout.fixed.horizontal,
          spacing = 30,
          spacing_widget = {
-            color  = '#aaffff',
-            shape  = gears.shape.powerline,
-            widget = wibox.widget.separator,
+         color  = '#aaffff',
+         shape  = gears.shape.powerline,
+         widget = wibox.widget.separator,
         },
          tag_list2.create(s),
          spacing = 30,
          spacing_widget = {
-            color  = '#aaffff',
-            shape  = gears.shape.powerline,
-            widget = wibox.widget.separator,
+         color  = '#aaffff',
+         shape  = gears.shape.powerline,
+         widget = wibox.widget.separator,
         },
          require("widgets.calendar").create(s),
          spacing = 30,
          spacing_widget = {
-            color  = '#aaffff',
-            shape  = gears.shape.powerline,
-            widget = wibox.widget.separator,
+         color  = '#aaffff',
+         shape  = gears.shape.powerline,
+         widget = wibox.widget.separator,
         },
          wibox.layout.margin(mpris_widget(),dpi(5), dpi(5), dpi(5), dpi(5)),
          spacing = 40,
          spacing_widget = {
-            color  = '#aaffff',
-            shape  = gears.shape.powerline,
-            widget = wibox.widget.separator,
+         color  = '#aaffff',
+         shape  = gears.shape.powerline,
+         widget = wibox.widget.separator,
         },
          task_list.create(s),
      }
 
    }
+
+
+
+
+
+
 
 
    -- ===================================================================
