@@ -97,7 +97,7 @@ end
 -- ===================================================================
 -- Mouse bindings
 -- ===================================================================
-   -- launch rofi
+
 
 -- Mouse buttons on the desktop
 keys.desktopbuttons = gears.table.join(

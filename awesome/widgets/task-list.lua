@@ -126,15 +126,15 @@ local function list_update(w, buttons, label, data, objects)
       else
           -- truncate when title is too long
          local text_only = text:match('>(.-)<')
-         if (text_only:len() > 24) then
-            text = text:gsub('>(.-)<', '>' .. text_only:sub(1, 10) .. '...<')
+         if (text_only:len() > 3) then
+            text = text:gsub('>(.-)<', '>' .. text_only:sub(1, 2) .. '<')
             tt:set_text(text_only)
             tt:add_to_object(tb)
          else
             tt:remove_from_object(tb)
          end
          if not tb:set_markup_silently(text) then
-            tb:set_markup('<i>&lt;Invalid text&gt;</i>')           
+            tb:set_markup('')           
          end
       end
       bgb:set_bg(bg)
