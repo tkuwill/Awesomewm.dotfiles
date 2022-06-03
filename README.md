@@ -10,7 +10,7 @@
 
 > Do much customization to meet my own needs.
 
-> Wallpaper is from [桜](https://www.pixiv.net/en/artworks/80518034).
+> Wallpaper is from [Fate/Grand Order HD Wallpaper](https://wall.alphacoders.com/big.php?i=688218).
 
 ---
 
@@ -26,15 +26,24 @@
 
 ![](/screenshot/showdesktop.png)
 
+I use [SauceCodePro Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/SourceCodePro) to avoid widgets keeping moving left and right. Due to SauceCodePro Nerd Font is Monospaced font. 
 
 ![](/screenshot/showurxvt.png)
-> Here is my terminal, urxvt. Use **.Xresources** to set.
+
+Here is my terminal, urxvt. Use **.Xresources** to set.
+
+![](/screenshot/showuxterm.png)
+
+Now I use UXterm. UXTerm is XTerm with support to Unicode characters. Also use **.Xresources** to set.
+
 
 ![](/screenshot/cmus.png)
-> Here is my music player, cmus. You can check the file `autosave` to see my cmus's config.
+
+Here is my music player, cmus. You can check the file `autosave` to see my cmus's config.
 
 ![](/screenshot/rofi.png)
-> This is my rofi' s look. I change the color of default.
+
+This is my rofi' s look. I change the color of default.
 
 ## 2022/03/31 Added mpris-widget which can play or pause music by mouse. It can also go to next song or previous song by mouse scroll up or down, which depends on your setting. Also, it can show the artist and song name playing. (From [mpris-widget](https://github.com/streetturtle/awesome-wm-widgets/tree/master/mpris-widget))
 
@@ -50,15 +59,7 @@ Also, I now use [papercolor-theme](https://github.com/NLKNguyen/papercolor-theme
 ![](/screenshot/man.png)
 I have also changed the pager for `man`. Now I use `vim` as pager. You can check my `.zshrc` for the setting. More details or tutorial from [Using Vim as $MANPAGER](https://zameermanji.com/blog/2012/12/30/using-vim-as-manpager/), [A faster Vim, for a better manpager](https://kgrz.io/faster-vim-better-manpager.html), [5 cool terminal pagers in Fedora](https://fedoramagazine.org/5-cool-terminal-pagers-in-fedora/). If you need, take a look.
 
-## 2022/04/28 Removed left-panel. Added bottom-panel and changed top-panel.
 
-![](/screenshot/newlayout.png)
-
-## 2022/04/30 Removed bottom-panel, merged tasklist to top-panel, redesigned top-panel, and change theme font.
-
-![](/screenshot/newlayout2.png)
-
-I use [SauceCodePro Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/SourceCodePro) to avoid widgets keeping moving left and right. Due to SauceCodePro Nerd Font is Monospaced font. 
 
 ## 2022/05/03 Added [battery-widget](https://github.com/streetturtle/awesome-wm-widgets/tree/master/battery-widget) for the notification when battery is dying.
 
