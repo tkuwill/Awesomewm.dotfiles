@@ -139,9 +139,14 @@ local function worker()
         local words = gears.string.split(stdout, ';')
         player_status = words[1]
         artist = words[2]
+        if artist ~= nil then
+             if string.len(artist) > 10 then
+                artist = string.sub(artist, 0, 9) .. ".."
+            end
+        end
         current_song = words[3]
         if current_song ~= nil then
-             if string.len(current_song) > 50 then
+             if string.len(current_song) > 10 then
                 current_song = string.sub(current_song, 0, 9) .. ".."
             end
         end

@@ -45,7 +45,8 @@ top_panel.create = function(s)
       type = dock,
       shape = gears.shape.rounded_rect,
       shape_args = {35, },
-      border_width = 5, 
+      border_width = 2,
+      border_color = "#ffffff",
    })
 
    panel:setup {
