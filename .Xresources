@@ -1,3 +1,7 @@
+! Disabled keycap picture insert mode and basic ISO 14755 mode
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
 ! Belling of urxvt
 urxvt*urgentOnBell: true
 
