@@ -18,7 +18,7 @@ set listchars=tab:>~,space:.
 set cindent
 set ai
 set shortmess-=S
-
+set nowrap
 " }}}
 
 " set laststatus=2
@@ -71,3 +71,4 @@ set encoding=utf-8
 
 " keymapping
 nnoremap <C-A> :noh<cr>
+
