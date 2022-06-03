@@ -258,9 +258,9 @@ zstyle ':vcs_info:git:*' formats 'on branch %b %m%u%c'
 
 
 
-function mem {
-	free -h | grep 'Mem' | cut -c 28-32
-}
+#function mem {
+#	free -h | grep 'Mem' | cut -c 28-32
+#}
 
 function battime {
   acpi | grep 'Battery 0' | grep  -Eo '[0-9][0-9]:[0-9][0-9]'
@@ -279,13 +279,19 @@ function battime {
 #}
 setopt promptsubst
 
-RPROMPT='%S%F{225}[%?]%f%S%F{15}%*%f|RAM$(mem)/7.7Gi%S%F{38}$(battery_pct_prompt)%S%F{154}$(battime)-remaining%S'
+RPROMPT='%S%F{225}[%?]%f%S%F{15}%*%f%S%F{38}$(battery_pct_prompt)%S%F{154}$(battime)-remaining%S'
 PROMPT='%F{38} %f%F{231}%n@%f%F{38}%m%f  %F{14}in %~ ${vcs_info_msg_0_} %f
 %F{40} %#%f  '
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.zsh_history
 HISTSIZE=50000
 SAVEHIST=99999
+# The meaning of these options can be found in man page of `zshoptions`.
+# setopt HIST_IGNORE_ALL_DUPS  # do not put duplicated command into history list
+# setopt HIST_SAVE_NO_DUPS  # do not save duplicated command
+setopt HIST_REDUCE_BLANKS  # remove unnecessary blanks
+setopt INC_APPEND_HISTORY_TIME  # append command to history file immediately after execution
+# setopt EXTENDED_HISTORY  # record command start time
 setopt beep nomatch
 unsetopt autocd extendedglob notify
 bindkey -e
