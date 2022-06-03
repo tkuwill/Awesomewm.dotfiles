@@ -9,8 +9,8 @@ set splitbelow splitright
 set ruler
 " Enable blinking together with different cursor shapes for insert/command mode, and cursor highlighting:
   set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
-  \,a:blinkwait700-blinkoff400-blinkon250-block
-  \,sm:block-blinkwait175-blinkoff150-blinkon175
+"  \,a:blinkwait700-blinkoff400-blinkon250-block
+"  \,sm:block-blinkwait175-blinkoff150-blinkon175
 
     
 set number
@@ -23,7 +23,7 @@ set expandtab
 set listchars=tab:>~,space:.
 set cindent
 set ai
-
+set nowrap
 " set laststatus=2
 " Some funky status bar code its seems
 " https://stackoverflow.com/questions/9065941/how-can-i-change-vim-status-line-colour
@@ -68,3 +68,6 @@ set termencoding=utf-8
 set fileencoding=utf-8
 
 set encoding=utf-8
+
+" keymapping
+nnoremap <C-A> :noh<cr>
