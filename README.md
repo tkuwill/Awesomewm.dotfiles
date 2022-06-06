@@ -20,6 +20,7 @@
 - However, I **DO NOT** promise that those must work in your computer. 
 - Use the part that you need, which is a good choice, I thought.
 - **The color in the config may be different from the screenshots below because I usually change colors of my UI to meet my need.**
+- Now I use `st` terminal. Here is [My-st-config](https://github.com/tkuwill/My-st-config).
 ---
 
 # Here is the screenshots ! !
