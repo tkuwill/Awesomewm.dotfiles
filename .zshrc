@@ -279,7 +279,7 @@ function battime {
 #}
 setopt promptsubst
 
-RPROMPT='%S%F{225}[%?]%f%S%F{15}%*%f%S%F{38}$(battery_pct_prompt)%S%F{154}$(battime)-remaining%S'
+RPROMPT='%F{225}[%?]%f|%F{15}%*%f|%F{38}$(battery_pct_prompt)%f|%F{154}$(battime)-remaining%f'
 PROMPT='%F{38} %f%F{231}%n@%f%F{38}%m%f  %F{14}in %~ ${vcs_info_msg_0_} %f
 %F{40} %#%f  '
 # Lines configured by zsh-newuser-install
@@ -326,3 +326,10 @@ export LESS_TERMCAP_so=$'\E[38;5;246m'    # begin standout-mode - info box
 export LESS_TERMCAP_ue=$'\E[0m'           # end underline
 export LESS_TERMCAP_us=$'\E[04;38;5;76m' # begin underline
 export MANPAGER="/bin/sh -c \"col -b | vim --noplugin -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
+
+# fff filemanager's config
+export FFF_HIDDEN=1
+export FFF_OPENER="xdg-open"
+export FFF_COL5=0
+export FFF_COL2=7
+export FFF_LS_COLORS=1
