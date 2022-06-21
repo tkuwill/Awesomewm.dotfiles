@@ -29,10 +29,12 @@ local theme_config_dir = gears.filesystem.get_configuration_dir() .. "/configura
 apps = {
    network_manager = "nm-connection-editor", -- recommended: nm-connection-editor
    power_manager = "acpi", -- recommended: xfce4-power-manager
-   terminal = "uxterm -sk",
+ --  terminal = "uxterm -sk",
+   terminal = "st",
    --launcher = "rofi -modi drun -show drun -theme " .. theme_config_dir .. "rofi.rasi",
    launcher = "rofi -normal-window -modi drun -show drun -theme " .. theme_config_dir .. "rofi.rasi",
-   lock = "i3lock -p default -f -i Pictures/DesktopBackground/sakuraokita-lock.png",
+--   lock = "i3lock -p default -f -i Pictures/DesktopBackground/sakuraokita-lock.png",
+   lock = "i3lock --indicator --inside-color=#fce5ff --radius=110 --ring-width=20 --clock --time-str=%H:%M:%S --date-str=%Y%b%e%A --time-font=SauceCodeProNerdFont --greeter-text=Welcome_Back_Will --greeter-color=#00ffff --greeter-font=SauceCodeProNerdFont -p default -f -i Pictures/DesktopBackground/sakuraokita-lock.png",
    --screenshot = "scrot -e 'mv $f ~/Pictures/ 2>/dev/null'",
    screenshot = "spectacle",
    filebrowser = ""

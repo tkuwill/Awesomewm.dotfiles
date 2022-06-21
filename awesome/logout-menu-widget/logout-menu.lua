@@ -52,7 +52,7 @@ local function worker(user_args)
     local font = args.font or beautiful.font
 
     local onlogout = args.onlogout or function () awesome.quit() end
-    local onlock = args.onlock or function() awful.spawn.with_shell("i3lock -p default -f -i Pictures/DesktopBackground/sakuraokita-lock.png") end
+    local onlock = args.onlock or function() awful.spawn.with_shell("i3lock --indicator --inside-color=#fce5ff --radius=110 --ring-width=20 --clock --time-str=%H:%M:%S --date-str=%Y%b%e%A --time-font=SauceCodeProNerdFont --greeter-text=Welcome_Back_Will --greeter-color=#00ffff --greeter-font=SauceCodeProNerdFont -p default -f -i Pictures/DesktopBackground/sakuraokita-lock.png") end
     local onreboot = args.onreboot or function() awful.spawn.with_shell("reboot") end
     local onsuspend = args.onsuspend or function() awful.spawn.with_shell(apps.lock .. " & systemctl suspend") end
     local onpoweroff = args.onpoweroff or function() awful.spawn.with_shell("shutdown now") end

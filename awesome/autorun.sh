@@ -12,4 +12,4 @@ run xfce4-power-manager
 run arandr
 run thunderbird
 run copyq
-run uxterm -sk
+##run uxterm -sk

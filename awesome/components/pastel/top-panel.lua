@@ -46,7 +46,7 @@ top_panel.create = function(s)
       shape = gears.shape.rounded_rect,
       shape_args = {35, },
       border_width = 2,
-      border_color = "#ffffff",
+      border_color = "",
    })
 
    panel:setup {
