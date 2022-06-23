@@ -23,7 +23,6 @@ set expandtab
 set listchars=tab:>~,space:.
 set cindent
 set ai
-set nowrap
 " set laststatus=2
 " Some funky status bar code its seems
 " https://stackoverflow.com/questions/9065941/how-can-i-change-vim-status-line-colour
@@ -71,3 +70,5 @@ set encoding=utf-8
 
 " keymapping
 nnoremap <C-A> :noh<cr>
+nnoremap <C-S> :set nowrap<cr>
+nnoremap <C-X> :set wrap<cr>
