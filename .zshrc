@@ -178,7 +178,7 @@ elif [[ "$OSTYPE" = linux*  ]]; then
     local battery_pct color
     battery_pct=$(battery_pct_remaining)
     if battery_is_charging; then
-      echo " ﴞ "
+      echo "ﮣ"
     else
       if [[ $battery_pct -gt 50 ]]; then
         color='green'
