@@ -1,6 +1,27 @@
+" Plugins will be downloaded under the specified directory.
+call plug#begin('~/.local/share/nvim/site/plugged')
+
+" Declare the list of plugins.
+" Plug ''
+Plug 'mattn/emmet-vim'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'preservim/nerdtree'
+Plug 'itchyny/lightline.vim'
+" Color theme plugins
+Plug 'morhetz/gruvbox'
+Plug 'NLKNguyen/papercolor-theme'
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+
+
+
 ""Background, color setting
-set background=dark
+set background=light
 colorscheme PaperColor    
+"autocmd vimenter * ++nested colorscheme gruvbox
+"let g:gruvbox_contrast_light = 'hard'
+"let g:gruvbox_hls_cursor = 'blue'
+"colorscheme gruvbox
 set t_Co=256
 
 ""general config
@@ -9,8 +30,8 @@ set splitbelow splitright
 set ruler
 " Enable blinking together with different cursor shapes for insert/command mode, and cursor highlighting:
   set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
-"  \,a:blinkwait700-blinkoff400-blinkon250-block
-"  \,sm:block-blinkwait175-blinkoff150-blinkon175
+  \,a:blinkwait700-blinkoff400-blinkon250-block
+  \,sm:block-blinkwait175-blinkoff150-blinkon175
 
     
 set number
@@ -42,19 +63,19 @@ set laststatus=2            " set the bottom status bar
 "hi statusline guibg=White ctermfg=8 guifg=DarkSlateGray ctermbg=15
 
 " Formats the statusline
-set statusline=%F                           " file path and name
-set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
-set statusline+=%{&ff}] "file format
-set statusline+=%y      "filetype
-set statusline+=%h      "help file flag
-set statusline+=[%{getbufvar(bufnr('%'),'&mod')?'modified':'saved'}]      
+" set statusline=%F                           " file path and name
+" set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
+" set statusline+=%{&ff}] "file format
+" set statusline+=%y      "filetype
+" set statusline+=%h      "help file flag
+" set statusline+=[%{getbufvar(bufnr('%'),'&mod')?'modified':'saved'}]      
 "modified flag
 
-set statusline+=%r      "read only flag
+" set statusline+=%r      "read only flag
 
-set statusline+=\ %=                        " align left
-set statusline+=Line:%l/%L[%p%%]            " line X of Y [percent of file]
-set statusline+=\ Col:%c                    " current column
+" set statusline+=\ %=                        " align left
+" set statusline+=Line:%l/%L[%p%%]            " line X of Y [percent of file]
+" set statusline+=\ Col:%c                    " current column
 "set statusline+=\ Buf:%n                    " Buffer number
 "set statusline+=\ [%b][0x%B]\               " ASCII and byte code under cursor
 
@@ -72,3 +93,4 @@ set encoding=utf-8
 nnoremap <C-A> :noh<cr>
 nnoremap <C-S> :set nowrap<cr>
 nnoremap <C-X> :set wrap<cr>
+map <F5> :NERDTreeToggle<CR>
