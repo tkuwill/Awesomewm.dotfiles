@@ -279,13 +279,16 @@ function battime {
 #}
 setopt promptsubst
 
-RPROMPT='%F{225}[%?]%f|%F{15}%*%f|%F{38}$(battery_pct_prompt)%f|%F{154}$(battime)-remaining%f'
-PROMPT='%F{38} %f%F{231}%n@%f%F{38}%m%f  %F{14}in %~ ${vcs_info_msg_0_} %f
+# RPROMPT='%F{225}[%?]%f|%F{15}%*%f|%F{38}$(battery_pct_prompt)%f|%F{154}$(battime)-remaining%f'
+PROMPT='%F{14} %~ ${vcs_info_msg_0_} %f
 %F{40} %#%f  '
+# PROMPT='%F{38} %f%F{231}%n@%f%F{38}%m%f  %F{14}in %~ ${vcs_info_msg_0_} %f
+# %F{40} %#%f  '
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.zsh_history
 HISTSIZE=50000
 SAVEHIST=99999
+HISTORY_IGNORE="(ls|cd|pwd|exit|cmus|la|bye|fff|ranger|mpv|yt-dlp|paru|yay|pavucontrol|rofi|./batterycycle.sh| ..)"
 # The meaning of these options can be found in man page of `zshoptions`.
 # setopt HIST_IGNORE_ALL_DUPS  # do not put duplicated command into history list
 # setopt HIST_SAVE_NO_DUPS  # do not save duplicated command
@@ -296,8 +299,13 @@ setopt beep nomatch
 unsetopt autocd extendedglob notify
 bindkey -e
 bindkey "\e[3~" delete-char
-bindkey "\e[7~" beginning-of-line
-bindkey "\e[8~" end-of-line
+# for urxvt and uxterm
+# bindkey "\e[7~" beginning-of-line
+# bindkey "\e[8~" end-of-line
+
+# for st terminal
+bindkey "^[[H" beginning-of-line
+bindkey "^[[4~" end-of-line
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/will/.zshrc'
@@ -333,3 +341,7 @@ export FFF_OPENER="xdg-open"
 export FFF_COL5=0
 export FFF_COL2=7
 export FFF_LS_COLORS=1
+# auto startx (for dwm)
+if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+  exec startx
+fi
