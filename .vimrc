@@ -1,6 +1,17 @@
 " BACKGROUND COLOR SETTING  --------------------------------------------------------------- {{{
 set background=dark
+
+"let g:PaperColor_Theme_Options = {
+"	  \   'theme': {
+"		    \     'default': {
+"			      \       'transparent_background': 1
+"				        \     }
+"		      \   }
+"	    \ }
 colorscheme PaperColor
+"autocmd vimenter * ++nested colorscheme gruvbox
+"let g:gruvbox_contrast_light = 'hard'
+"colorscheme gruvbox
 set t_Co=256
 
 " }}}
@@ -69,6 +80,6 @@ set encoding=utf-8
 " }}}
 
 " keymapping
-nnoremap <C-A> :noh<cr>
+nnoremap <C-L> :noh<cr>
 nnoremap <C-S> :set nowrap<cr>
 nnoremap <C-X> :set wrap<cr>
