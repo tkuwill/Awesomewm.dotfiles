@@ -7,12 +7,12 @@ Plug 'mattn/emmet-vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'preservim/nerdtree'
 Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-commentary'
 " Color theme plugins
 Plug 'morhetz/gruvbox'
 Plug 'NLKNguyen/papercolor-theme'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
-
 
 
 ""Background, color setting
@@ -90,7 +90,6 @@ set fileencoding=utf-8
 set encoding=utf-8
 
 " keymapping
-nnoremap <C-A> :noh<cr>
 nnoremap <C-S> :set nowrap<cr>
 nnoremap <C-X> :set wrap<cr>
 map <F5> :NERDTreeToggle<CR>
