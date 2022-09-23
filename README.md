@@ -1,3 +1,7 @@
+# Now I don't use Awesome WM anymore. Now I use dwm. But you still can check this if you want to use Awesome WM. Yet, this repository won't update anymore.
+
+# Here are my dotfiles of dwm used on two laptops: [My-dwm-dotfiles-My-st-config](https://github.com/tkuwill/My-dwm-dotfiles-My-st-config) and [willdezenbookArch_dotfiles](https://github.com/tkuwill/willdezenbookArch_dotfiles). You can have a look if you are interested in dwm.
+
 <div align="center">
     <img src="https://awesomewm.org/images/awesome-logo.svg">
 </div>
@@ -11,6 +15,8 @@
 > Do much customization to meet my own needs.
 
 > Wallpaper is from [Fate/Grand Order HD Wallpaper](https://wall.alphacoders.com/big.php?i=688218).
+
+
 
 ---
 
